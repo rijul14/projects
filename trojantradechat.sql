@@ -19,6 +19,19 @@ CREATE TABLE `trojantrade`.`unreadMessages` (
   `to_id` INT NOT NULL,
   `text` VARCHAR(500) NOT NULL,
   `time` DATETIME);
+  
+ CREATE TABLE 'trojantrade'.'imageReadMessages' (
+  `from_id` INT NOT NULL,
+  `to_id` INT NOT NULL,
+   img varbinary(max) NOT NULL,
+  `time` DATETIME);
+  
+  CREATE TABLE 'trojantrade'.'imageUnreadMessages' (
+  `from_id` INT NOT NULL,
+  `to_id` INT NOT NULL,
+   img varbinary(max) NOT NULL,
+  `time` DATETIME);
+  
 
 INSERT INTO user (nickname, username, password, location) VALUES ('Trojan','trojan@usc.edu', 'trojan123', 'USC');
 INSERT INTO user (nickname, username, password, location) VALUES ('Hyeri', 'hyeriwoo@usc.edu', 'hyeri123', 'USC');
