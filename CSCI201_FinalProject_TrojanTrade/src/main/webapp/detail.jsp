@@ -192,6 +192,7 @@
       <h4>Price: <%=item.getPrice()%></h4>
       <h4>Location: <%=item.getLocation()%></h4>
       <h4><%=item.getDescription()%></h4>
+      <a href ="https://twitter.com/intent/tweet?text=Look%20what%20I%20found%20on%20TrojanTrade!">Tweet About It!</a>
       <a href="Favorite?index=<%=item.getId()%>"><img src="<%=heart%>"></a>
       <form action="Chat" method="POST"><button type="submit">Chat with seller</button></form>
       
