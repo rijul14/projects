@@ -1,1 +1,0 @@
-SELECT * FROM item WHERE location = 'EVK' or location = 'USC'
